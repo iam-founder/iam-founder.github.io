@@ -2,12 +2,30 @@
 /* font-family: 'Roboto Condensed', sans-serif; */
 
 body {
-	color: black;
+	color: rgb(58,58,58);
 	background-color: white;
+	font-family: Helvetica, Arial, sans-serif;
 }
 
+/* Terms */
+
 .tos {
-	
+	margin: 3em;
+	font-size: 1.125em;
+}
+
+.tos h1 {
+	text-align: center;
+	margin-top: 1.5em;
+}
+
+.tos h2 {
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+}
+
+.tos p {
+	line-height: 150%;
 }
 
 
