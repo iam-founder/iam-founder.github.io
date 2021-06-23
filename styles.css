@@ -9,7 +9,7 @@ body {
 /* Layout */
 
 header {
-	margin: 2.5em;
+	padding: 1.5em; /* 1.5em for mobile, 2.5em for desktop */
 	display: flex;
 	justify-content: space-between; /* Logo at start, space and menu */
 	align-items: center;
@@ -234,7 +234,7 @@ footer .sancahub {
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
 	text-align: center;
-	font-size: 1.5em;
+	font-size: 1.25em;
 	line-height: 125%;
 }
 
@@ -417,6 +417,10 @@ footer .sancahub {
 
 	/* Layout */
 
+	header {
+		padding: 2.5em;
+	}
+
 	main section {
 		padding-left: 3em;
 		padding-right: 3em;	
@@ -455,6 +459,10 @@ footer .sancahub {
 	.home .apply .option {
 		width: 35%;
 		margin: 1.5em;
+	}
+
+	.home .contact {
+		font-size: 1.5em;
 	}
 
 	.home .partners ul {
