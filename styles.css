@@ -10,14 +10,19 @@ body {
 
 header {
 	margin: 2.5em;
+	display: flex;
+	justify-content: space-between; /* Logo at start, space and menu */
+	align-items: center;
 }
 
 header .logo-iam, .logo-iam-founder {
 	font-size: 3em;
 }
 
-header nav {
-	display: none;
+header nav a {
+	text-decoration: none;
+	color: rgb(58,58,58);
+	padding: 0 1em;
 }
 
 main section {
@@ -79,6 +84,11 @@ footer .sancahub {
 
 /* Home */
 
+.home .letter {
+	margin-top: 8em;
+	margin-bottom: 7.5em;
+}
+
 .home .letter h1 {
 	font-size: 2.65em;
 	line-height: auto;
@@ -90,9 +100,9 @@ footer .sancahub {
 }
 
 .home .about {
-	background-color: black;
 	background: url(images/led-simulator.jpeg) no-repeat; /* https://www.nasa.gov/image-feature/glenn-led-simulator */
-	background-size: 100%;
+	background-size: 200%;
+	background-color: #000221;
 	position: relative; /* Photo credit */
 }
 
@@ -126,6 +136,7 @@ footer .sancahub {
 .home .about .button-more {
 	font-size: 150%;
 	padding: .25em .65em;
+	margin-bottom: 5em;
 }
 
 .home .apply {
@@ -144,9 +155,11 @@ footer .sancahub {
 	display: flex;
 	justify-content: center;
 	align-items: flex-start; /* Keep minimum vertical size */
+	flex-direction: column;
 }
 
 .home .apply .option {
+	width: 90%;
 	background: rgb(22,34,109);
 	background: linear-gradient(180deg, rgba(22,34,109,1) 0%, rgba(158,43,174,1) 100%);
 	color: rgba(255,255,255,.95);
@@ -231,7 +244,6 @@ footer .sancahub {
 
 .home .partners {
 	padding-top: 3em;
-	padding-bottom: 1em;
 }
 
 .home .partners p {
@@ -247,7 +259,7 @@ footer .sancahub {
 }
 
 .home .partners li {
-	margin: 1em 1.85em 0 1.85em;
+	margin: 1em 1.85em 1em 1.85em;
 }
 
 .home .partners .square {
@@ -309,7 +321,7 @@ footer .sancahub {
 }
 
 .program .about .faq .item {
-	margin: 2em 1em;
+	margin: 2.15em 1em;
 }
 
 .program .about .faq .question {
@@ -401,21 +413,7 @@ footer .sancahub {
 
 	/* Layout */
 
-	header {
-		display: flex;
-		justify-content: space-between; /* Logo at start, space and menu */
-		align-items: center;
-	}
 	
-	header nav {
-		display: block;
-	}
-
-	header nav a {
-		text-decoration: none;
-		color: rgb(58,58,58);
-		padding: 0 1em;
-	}
 	
 	/* Home */
 
@@ -423,12 +421,16 @@ footer .sancahub {
 		width: 35%;
 		margin-top: 8em;
 		margin-bottom: 4em;
-		font-size: 1.125em;
 		min-height: 15em;
+	}
+
+	.home .letter h1 {
+		font-size: 2.8125em;
 	}
 
 	.home .about {
 		min-height: 55em;
+		background-size: 100%;
 	}
 
 	.home .about .call {
@@ -437,6 +439,10 @@ footer .sancahub {
 
 	.home .apply {
 		min-height: 30em;
+	}
+
+	.home .apply .options {
+		flex-direction: row;
 	}
 
 	.home .apply .option {
