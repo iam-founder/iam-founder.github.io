@@ -15,15 +15,21 @@ header {
 	align-items: center;
 }
 
-header .logo-iam, .logo-iam-founder {
+header .logo-iam {
 	font-size: 3em;
 }
 
-header nav a {
+header .logo-iam-founder {
+	font-size: 2em;
+}
+
+header a {
 	text-decoration: none;
+}
+
+header nav a {
 	color: rgb(58,58,58);
 	padding: 0 1em;
-	display: none; /* temp */
 }
 
 main section {
@@ -284,7 +290,7 @@ footer .sancahub {
 }
 
 .program .intro h1 {
-	font-size: 3.5em;
+	font-size: 3em;
 	margin-bottom: 1em;
 }
 
@@ -421,6 +427,14 @@ footer .sancahub {
 		padding: 2.5em;
 	}
 
+	header nav {
+		display: block;
+	}
+
+	header .logo-iam-founder {
+		font-size: 3em;
+	}
+
 	main section {
 		padding-left: 3em;
 		padding-right: 3em;	
@@ -473,6 +487,10 @@ footer .sancahub {
 
 	.program .intro {
 		width: 45%;
+	}
+
+	.program .intro h1 {
+		font-size: 3.5em;
 	}
 
 	.program .about {
