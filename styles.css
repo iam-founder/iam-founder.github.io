@@ -23,11 +23,12 @@ header nav a {
 	text-decoration: none;
 	color: rgb(58,58,58);
 	padding: 0 1em;
+	display: none; /* temp */
 }
 
 main section {
-	padding-left: 3em;
-	padding-right: 3em;	
+	padding-left: 2em; /* 2em for mobile, 3em for desktop */ 
+	padding-right: 2em;	
 }
 
 footer {
@@ -159,12 +160,12 @@ footer .sancahub {
 }
 
 .home .apply .option {
-	width: 90%;
+	width: 100%;
+	margin: 1.5em 0;
 	background: rgb(22,34,109);
 	background: linear-gradient(180deg, rgba(22,34,109,1) 0%, rgba(158,43,174,1) 100%);
 	color: rgba(255,255,255,.95);
 	border-radius: 14px;
-	margin: 1.5em;
 
 	box-shadow: /* https://codersblock.com/blog/creating-glow-effects-with-css/ */
 	    inset 0 0 10px #fff,      /* inner white */
@@ -256,10 +257,13 @@ footer .sancahub {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	padding: 0;
+	margin: 0;
 }
 
 .home .partners li {
-	margin: 1em 1.85em 1em 1.85em;
+	padding: 0;
+	margin: 1em 1.85em;
 }
 
 .home .partners .square {
@@ -413,8 +417,11 @@ footer .sancahub {
 
 	/* Layout */
 
-	
-	
+	main section {
+		padding-left: 3em;
+		padding-right: 3em;	
+	}
+
 	/* Home */
 
 	.home .letter {
@@ -447,6 +454,7 @@ footer .sancahub {
 
 	.home .apply .option {
 		width: 35%;
+		margin: 1.5em;
 	}
 
 	.home .partners ul {
