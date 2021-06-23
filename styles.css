@@ -1,10 +1,337 @@
-/* font-family: 'Roboto', sans-serif; */
-/* font-family: 'Roboto Condensed', sans-serif; */
+/* Christof, 2021 */
 
 body {
 	color: rgb(58,58,58);
 	background-color: white;
 	font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Layout */
+
+header {
+	margin: 2.5em;
+}
+
+header .logo-iam, .logo-iam-founder {
+	font-size: 3em;
+}
+
+header nav {
+	display: none;
+}
+
+main section {
+	padding-left: 3em;
+	padding-right: 3em;	
+}
+
+footer {
+	background-color: white;
+	padding-top: 3em;
+	padding-bottom: 2.5em;
+	text-align: center;
+}
+
+footer .logo-iam {
+	display: block;
+	font-size: 2em;
+	margin-bottom: .45em;
+}
+
+footer nav {
+	margin-bottom: 1.5em;
+	font-size: .9375em;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+}
+
+footer a {
+	color: rgb(58,58,58);
+	margin: 0 .25em;
+	text-decoration: none;
+}
+
+footer a:hover {
+	text-decoration: underline;
+	color: rgb(40,40,40);
+} 
+
+footer p {
+	font-size: .875em;
+	margin: .35em 0;
+}
+
+footer .address {
+	font-size: .8125em;
+}
+
+footer .sancahub {
+	margin-top: 1.5em;
+}
+
+.invert { /* Body theme */
+	background-color: #000221;
+}
+
+.invert header nav a {
+	color: rgba(255,255,255,.95);
+} 
+
+/* Home */
+
+.home .letter h1 {
+	font-size: 2.65em;
+	line-height: auto;
+}
+
+.home .letter p {
+	font-size: 120%;
+	line-height: 135%;
+}
+
+.home .about {
+	background-color: black;
+	background: url(images/led-simulator.jpeg) no-repeat; /* https://www.nasa.gov/image-feature/glenn-led-simulator */
+	background-size: 100%;
+	position: relative; /* Photo credit */
+}
+
+.home .about .photo-by {
+	color: rgba(255,255,255,.4);
+	font-size: .6875em;
+	display: inline-block;
+	position: absolute;
+	bottom: 1em;
+	right: 1em;
+}
+
+.home .about .photo-by a {
+	color: rgba(255,255,255,.6);
+	text-decoration: none;	
+}
+
+.home .about .logo-iam-founder {
+	font-size: 2.65em;
+	display: inline-block;
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+}
+
+.home .about .call {
+	color: #FDFDFD;
+	font-family: 'Inconsolata', monospace;
+	font-size: 2em;
+}
+
+.home .about .button-more {
+	font-size: 150%;
+	padding: .25em .65em;
+}
+
+.home .apply {
+	background-color: #000221;
+	margin-top: 1.75em; 
+}
+
+.home .apply h1 {
+	color: white;
+	text-align: center;
+	padding: 2em 0 1em 0;
+	margin: 0;
+}
+
+.home .apply .options {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start; /* Keep minimum vertical size */
+}
+
+.home .apply .option {
+	background: rgb(22,34,109);
+	background: linear-gradient(180deg, rgba(22,34,109,1) 0%, rgba(158,43,174,1) 100%);
+	color: rgba(255,255,255,.95);
+	border-radius: 14px;
+	margin: 1.5em;
+
+	box-shadow: /* https://codersblock.com/blog/creating-glow-effects-with-css/ */
+	    inset 0 0 10px #fff,      /* inner white */
+	    inset 5px 0 10px #ce00fc,   /* inner left magenta short */
+	    inset -5px 0 5px #0ff,  /* inner right cyan short */
+	    inset 5px 0 30px #ce00fc,  /* inner left magenta broad */
+	    inset -7px 0 30px #0ff, /* inner right cyan broad */
+	    0 0 2px #ce00fc,            /* outer white */
+	    -5px 0 5px #ce00fc,        /* outer left magenta */
+	    7px 0 5px #0ff;         /* outer right cyan */
+}
+
+.home .apply .option h2 {
+	color: white;
+	text-align: center;
+	font-size: 2.125em;
+	font-family: 'Roboto', sans-serif;
+}
+
+.home .apply .option p {
+	margin-left: 2em;
+	margin-right: 2em;
+	font-size: 1.125em;
+}
+
+.home .apply .option ul {
+	list-style: none;
+}
+
+.home .apply .option ul li::before { /* Custom bullet */
+	content: "\2022";
+	color: #ce00fc;
+	font-weight: bold;
+	display: inline-block;
+	width: 1em;
+	margin-left: -.5em;
+}
+
+.home .apply .option li {
+	font-size: 1.0625em;
+	line-height: 125%;
+	font-family: 'Roboto', sans-serif;
+}
+
+.home .apply .option .submit {
+	display: block;
+	text-align: center;
+	padding: .5em 0 1em 0;
+}
+
+.home .apply .option .submit .button-apply {
+	font-size: 115%;
+	padding: .25em .5em;
+	margin: .5em 0;
+}
+
+.home .apply .motto {
+	color: #FDFDFD;
+	margin-top: 2.5em;
+	padding-bottom: 4em;
+	font-size: 2em;
+}
+
+.home .contact {
+	background-color: #f0f0f0;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	text-align: center;
+	font-size: 1.5em;
+	line-height: 125%;
+}
+
+.home .contact a {
+	color: rgb(58,58,58);
+	text-decoration: none;
+}
+
+.home .partners {
+	padding-top: 3em;
+	padding-bottom: 1em;
+}
+
+.home .partners p {
+	text-align: center;
+}
+
+.home .partners ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.home .partners li {
+	margin: 1em 1.85em 0 1.85em;
+}
+
+.home .partners .square {
+	max-width: 115px;
+}
+
+.home .partners .horizontal {
+	max-width: 170px;
+}
+
+/* Program */
+
+.program .intro {
+	padding-top: 4.5em;
+	padding-bottom: 2em;
+	font-family: 'Inconsolata', monospace;
+	color: rgba(255,255,255,.9);
+}
+
+.program .intro h1 {
+	font-size: 3.5em;
+	margin-bottom: 1em;
+}
+
+.program .intro h2 {
+	font-size: 1.75em;
+	color: #ce00fc;
+	font-weight: bold;
+}
+
+.program .intro ul {
+	list-style: none;
+}
+
+.program .intro li {
+	font-size: 1.5em;
+}
+
+.program .intro ul li::before {
+	content: "\2022";
+	color: #ce00fc;
+	font-weight: bold;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1.5em;
+}
+
+.program .intro .button-apply {
+	margin-top: 1em;
+	margin-left: .2em;
+	font-size: 1.25em;
+	font-family: 'Roboto', sans-serif;
+}
+
+.program .about {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+}
+
+.program .about .faq .item {
+	margin: 2em 1em;
+}
+
+.program .about .faq .question {
+	font-size: 1.625em;
+	display: block;
+	margin-bottom: .5em;
+}
+
+.program .about .faq .answer {
+	display: block;
+	margin-top: .2em;
+	line-height: 150%;
+	font-size: 1.125em;
+}
+
+.program .last-apply {
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+}
+
+.program .last-apply .button-apply {
+	font-family: 'Roboto', sans-serif;
 }
 
 /* Terms */
@@ -28,8 +355,117 @@ body {
 	line-height: 150%;
 }
 
+/* Buttons */
 
+.button-apply {
+	font-size: 1.125em;
+}
+
+.button-bubbly {
+	display: inline-block;
+	/*font-size: 1em;*/
+	padding: 1em 2em;
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: #ff0081;
+	color: #fff;
+	border-radius: 4px;
+	border: none;
+	cursor: pointer;
+	position: relative;
+	transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+	box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+}
+
+/* Logos & motto */
+
+.logo-iam, .logo-iam-founder, .motto, .bin {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: bold;
+}
+
+.logo-iam {
+	color: rgb(20,20,20);
+}
+
+.logo-iam-founder {
+	color: white;
+}
+
+.logo-iam-founder b {
+	color: #ce00fc;
+}
+
+/* Desktop */
 @media only screen and (min-width: 768px) {
-  /* For desktop: */
+
+	/* Layout */
+
+	header {
+		display: flex;
+		justify-content: space-between; /* Logo at start, space and menu */
+		align-items: center;
+	}
+	
+	header nav {
+		display: block;
+	}
+
+	header nav a {
+		text-decoration: none;
+		color: rgb(58,58,58);
+		padding: 0 1em;
+	}
+	
+	/* Home */
+
+	.home .letter {
+		width: 35%;
+		margin-top: 8em;
+		margin-bottom: 4em;
+		font-size: 1.125em;
+		min-height: 15em;
+	}
+
+	.home .about {
+		min-height: 55em;
+	}
+
+	.home .about .call {
+		width: 45%;
+	}
+
+	.home .apply {
+		min-height: 30em;
+	}
+
+	.home .apply .option {
+		width: 35%;
+	}
+
+	.home .partners ul {
+		flex-direction: row;
+	}
+
+	/* Program */
+
+	.program .intro {
+		width: 45%;
+	}
+
+	.program .about {
+		flex-direction: row;
+	}
+
+	.program .about .faq .item {
+		width: 65%;
+	}
+
+	.program .about .stuff .photo {
+		max-width: 480px;
+		margin: 1em;
+	}  
   
 }
+
+/* 01001111 00100000 01001001 01001101 01010000 01010010 01001111 01010110 11000011 10000001 01010110 01000101 01001100 00100000 11000011 10001001 00100000 01010000 01001111 01010011 01010011 11000011 10001101 01010110 01000101 01001100 00101110 
