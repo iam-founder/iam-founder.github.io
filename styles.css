@@ -383,9 +383,8 @@ footer .sancahub {
 	font-size: 1.125em;
 }
 
-.button-bubbly {
+.button-bubbly { /* https://codepen.io/nourabusoud/pen/ypZzMM */
 	display: inline-block;
-	/*font-size: 1em;*/
 	padding: 1em 2em;
 	-webkit-appearance: none;
 	appearance: none;
