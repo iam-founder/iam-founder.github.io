@@ -81,6 +81,11 @@ footer .sancahub {
 	margin-top: 1.5em;
 }
 
+.image-responsive { /* For images only */
+	width: 100%;
+	height: auto;
+}
+
 .invert { /* Body theme */
 	background-color: #000221;
 }
@@ -283,32 +288,37 @@ footer .sancahub {
 /* Program */
 
 .program .intro {
+	display: flex;
+	flex-direction: column;
+}
+
+.program .intro .call {
 	padding-top: 4.5em;
 	padding-bottom: 2em;
 	font-family: 'Inconsolata', monospace;
 	color: rgba(255,255,255,.9);
 }
 
-.program .intro h1 {
-	font-size: 3em;
+.program .intro .call h1 {
+	font-size: 2.8125em;
 	margin-bottom: 1em;
 }
 
-.program .intro h2 {
+.program .intro .call h2 {
 	font-size: 1.75em;
 	color: #ce00fc;
 	font-weight: bold;
 }
 
-.program .intro ul {
+.program .intro .call ul {
 	list-style: none;
 }
 
-.program .intro li {
+.program .intro .call li {
 	font-size: 1.5em;
 }
 
-.program .intro ul li::before {
+.program .intro .call ul li::before {
 	content: "\2022";
 	color: #ce00fc;
 	font-weight: bold;
@@ -322,6 +332,38 @@ footer .sancahub {
 	margin-left: .2em;
 	font-size: 1.25em;
 	font-family: 'Roboto', sans-serif;
+}
+
+.program .region {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.program .region .info .label {
+	display: block;
+	font-family: 'Inconsolata', monospace;
+	font-weight: bold;
+	color: #ce00fc;
+	font-size: 1.375em;
+	margin-top: 1em; 
+}
+
+.program .region .info h1 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 2.65em;
+}
+
+.program .region .info h1 strong {
+	font-size: 125%;
+}
+
+.program .region .info p {
+	line-height: 150%;
+	font-size: 1.125em;
+	font-size: 1.25em;
 }
 
 .program .about {
@@ -485,11 +527,35 @@ footer .sancahub {
 	/* Program */
 
 	.program .intro {
-		width: 45%;
+		flex-direction: row;
 	}
 
-	.program .intro h1 {
+	.program .intro .call {
+		width: 50%;
+	}
+
+	.program .intro .call h1 {
 		font-size: 3.5em;
+	}
+
+	.program .intro .tree {
+		width: 50%;
+	}
+
+	.program .intro .tree img {
+		border-bottom: 1px solid #000250;
+	}
+
+	.program .region {
+		flex-direction: row;
+	}
+
+	.program .region .info {
+		width: 50%;
+	}
+
+	.program .region .map {
+		width: 50%;
 	}
 
 	.program .about {
