@@ -401,22 +401,45 @@ footer .sancahub {
 /* Terms */
 
 .tos {
-	margin: 3em;
+	margin: 3em auto 8em auto;
+	width: 67%;
+	/*margin: 3em 24em 3em 3em;*/
 	font-size: 1.125em;
+	color: rgb(51,51,51);
 }
 
 .tos h1 {
 	text-align: center;
 	margin-top: 1.5em;
+	color: rgb(26,25,26);
+	font-size: 2em;
 }
 
 .tos h2 {
-	margin-top: 1.5em;
+	margin-top: 2em;
 	margin-bottom: 1em;
+	color: rgb(26,25,26);
+	font-size: 1.25em;
+	line-height: 175%;
 }
 
 .tos p {
 	line-height: 150%;
+	font-size: 1em;
+}
+
+.tos a {
+	color: rgb(49, 130, 206);
+	text-decoration: none;
+}
+
+.tos .language-selector ul {
+	margin: 3.5em 1em;
+	padding: 0;
+}
+
+.tos .language-selector li {
+	line-height: 1.5em;
 }
 
 /* Buttons */
