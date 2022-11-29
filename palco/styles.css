@@ -98,12 +98,12 @@ footer .sancahub {
 }
 
 .stage .speaker {
-	background-color: yellow; /* temp */
+/*	background-color: yellow;*/
 	height: 100%; /* Relative to .stage */
 }
 
 .stage .blobs {
-	background-color: cyan; /* temp */
+/*	background-color: cyan;*/
 	height: 100%; /* Relative to .stage */
 }
 
