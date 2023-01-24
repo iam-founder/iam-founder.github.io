@@ -54,9 +54,11 @@
 				// Load meet
 				const domain = 'meet.jit.si';
 				const options = {
-				    roomName: 'PalcoIAM#config.disableDeepLinking=true',
+				    roomName: 'PalcoIAM',
 				    width: "100%",
 				    height: "100%",
+				    disableDeepLinking: "true",
+				    prejoinConfig: "false",
 				    parentNode: parentElement
 				};
 				const api = new JitsiMeetExternalAPI(domain, options);
