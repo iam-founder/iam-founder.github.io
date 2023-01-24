@@ -143,10 +143,11 @@ footer .sancahub {
 
 	.stage {
 		display: flex;
+		height: 90%; /* Double-check, see mobile also */
 	}
 
 	.stage .speaker {
-		width: 67%;
+		width: 66%;
 	}
 
 	.stage .blobs {
