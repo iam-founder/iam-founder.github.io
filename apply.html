@@ -3,7 +3,21 @@
 <head>
 	<meta charset="utf-8">
 	<title>Apply | IAM Founder</title>
-	<meta http-equiv="refresh" content="3; URL=https://iamfounder.softr.app/apply" />
+	<!-- Redirect with query parameter -->
+	<script>
+	        window.onload = function() {
+	            // Current URL
+	            var url = new URL(window.location.href);
+	            // Get query parameter
+	            var queryParam = url.searchParams.get('recordId');
+	            if (queryParam) {
+	                // Sets the redirect URL
+	                var redirectUrl = 'https://iamfounder.softr.app/apply?recordId=' + encodeURIComponent(queryParam);
+	                // Redirect to the new URL
+	                window.location.href = redirectUrl;
+	            }
+		}
+	</script>
 	<!-- Privacy-friendly analytics -->
 	<script defer data-domain="iamfounder.com.br" src="https://plausible.io/js/plausible.js"></script>
 </head>
