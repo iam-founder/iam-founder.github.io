@@ -10,12 +10,15 @@
 	            var url = new URL(window.location.href);
 	            // Get query parameter
 	            var queryParam = url.searchParams.get('recordId');
+		    var redirectUrl;
 	            if (queryParam) {
 	                // Sets the redirect URL
 	                var redirectUrl = 'https://iamfounder.softr.app/apply?recordId=' + encodeURIComponent(queryParam);
 	                // Redirect to the new URL
 	                window.location.href = redirectUrl;
-	            }
+	            } else {
+			redirectUrl = 'https://iamfounder.softr.app/apply';
+		    }	
 		}
 	</script>
 	<!-- Privacy-friendly analytics -->
